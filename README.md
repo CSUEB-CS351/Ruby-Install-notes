@@ -1,4 +1,4 @@
-Windows 
+# Windows:
 
 Control panel open : “Programs” : “Turn Windows features on or off.” 
 Scroll down to the bottom of the list and check the checkbox next to “Windows Subsystem for Linux,” then click “OK.” Then reboot the computer.
@@ -30,13 +30,37 @@ https://github.com/rbenv/rbenv
 
 `gem list`
 
+`npm install --global yarn`
+
+`mkdir web_development`
+`cd to web_development`
+`rbenv local 2.7.4`
+
+`gem install rails`
+`gem install bundler`
+`rbenv rehash`
+`rails --version`
+
+`rails new firstApp`
+
+`sudo apt-get install postgresql postgresql-contrib libpq-dev`
+
+`sudo /etc/init.d/postgresql start`
+
+`sudo -u postgres psql` 
+
+`create role [username] with createdb login password 'develop';`
+
+`gem install pg`
+
+`rails new MyPostgresqlApp --database=posgresql`
 
 
 
 
 
 
-Mac:
+# Mac:
 https://brew.sh/
 Terminal: 
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
@@ -44,35 +68,42 @@ Terminal:
 https://github.com/rbenv/rbenv
 `brew install rbenv`
 
+`rbenv init`
+
+add `eval "$(rbenv init -)"` to your .zshrc file or .bashrc on old MacOS
+
+to see stable verions of ruby you can install `rbenv install --list' or `rbenv install --list-all` to see the all 
+
+
 `rbenv install 2.7.4`
+
 
 Download and install Node.js
 http://nodejs.org/en/download
 
 `npm install --global yarn`
 
-`gem install rails`
 `mkdir web_development`
 `cd to web_development`
+`rbenv local 2.7.4`
 
+`gem install rails`
+`gem install bundler`
+`rbenv rehash`
+`rails --version`
 
 `rails new firstApp`
 
-sudo find / -name "psql"
+`brew install postgresql`
+`brew services start postgresql`
+later to stop postgresql `brew services stop postgresql`
+gem install pg
+`rbenv rehash`
 
-nano ~/.zshrc
-```
-path+=('Library/PostgresSQL/14/bin/')
-export PATH
-```
 
-or for bash
-
-nano ~/.bash_profile
-```
-PATH=$PATH:/Library/PostgreSQL/9.4/bin
-```	
-	
-
+`sudo -u postgres psql` 
+`create role [username] with createdb login password 'develop';`
+`gem install pg`
+`rails new MyPostgresqlApp --database=posgresql`
 
 
