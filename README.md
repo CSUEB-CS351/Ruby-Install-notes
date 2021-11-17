@@ -53,7 +53,7 @@ https://github.com/rbenv/rbenv
 
 `gem install pg`
 
-`rails new MyPostgresqlApp --database=posgresql`
+`rails new MyPostgresqlApp --database=postgresql`
 
 
 
